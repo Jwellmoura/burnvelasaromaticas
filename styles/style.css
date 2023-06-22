@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;600&display=swap');
+
+:root {
+    --cor-primaria: #ffeeda;
+    --cor-secundaria: black;
+    --cor-terciaria: #be5730;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 21%
+}
+
+.cabecalho__menu__link {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+
+.apresentacao {
+    padding: 1% 13%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;  
+
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 1.56rem; 
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+    font-size: 3.1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.apresentacao__conteudo__texto1 {
+    font-size: 1.25rem;
+    font-family:'Libre Franklin', sans-serif;
+    text-align: center;
+}
+
+.apresentacao__conteudo__texto2 {
+    font-size: 1.25rem;
+    font-family:'Libre Franklin', sans-serif;
+    text-align:center;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family:'Libre Franklin', sans-serif;
+    font-size: 1.25rem;
+    margin-top: 5%;
+    color:#744d1f;
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #744d1f;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 22px 0;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family:'Libre Franklin', sans-serif;
+
+}
+
+.apresentacao__links__link:hover {
+    background-color:#f1d7b9;
+}   
+
+.apresentacao__imagem {
+    width: 55%;
+}
+
+.apresentacao__imagem2 {
+    width: 50%;
+}
+.rodape {
+    color:var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 20px;
+    text-align: center;
+    font-family:'Libre Franklin', sans-serif;
+    font-weight: 200;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 15%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 1%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}

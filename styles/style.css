@@ -179,4 +179,8 @@ body {
         text-align: justify;
         padding: 2%;
     }
+
+    .apresentacao__conteudo__titulo {
+        display: none;
+    }
 }

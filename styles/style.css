@@ -23,7 +23,7 @@ body {
 .cabecalho__menu__link {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
 }
@@ -76,6 +76,12 @@ body {
     text-align:center;
 }
 
+.apresentacao__conteudo__texto3 {
+    font-size: 1.25rem;
+    font-family:'Libre Franklin', sans-serif;
+    text-align: justify;
+}
+
 .apresentacao__links {
     display: flex;
     flex-direction: column;
@@ -114,10 +120,13 @@ body {
 
 .apresentacao__imagem {
     width: 55%;
+    padding: 1%;
 }
 
 .apresentacao__imagem2 {
-    width: 50%;
+    width: 25%;
+    padding-right: 10%;
+    padding-top: 10%;
 }
 .rodape {
     color:var(--cor-primaria);
@@ -130,7 +139,7 @@ body {
 
 @media (max-width: 1200px) {
     .cabecalho {
-        padding: 15%;
+        padding: 15% 0% 5% 0%;
     }
 
     .cabecalho__menu {
@@ -140,9 +149,34 @@ body {
     .apresentacao {
         flex-direction: column-reverse;
         padding: 1%;
+        gap:10px;
     }
 
     .apresentacao__conteudo {
-        width: auto;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .titulo-destaque {
+        color: var(--cor-terciaria);
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .apresentacao__imagem {
+        width: 100%;
+    }
+
+    .apresentacao__imagem2 {
+        width: 50%;
+        padding: 10% 1% 1% 1%;
+    }
+
+    .apresentacao__conteudo__texto3 {
+        font-size: 1.2rem;
+        font-family:'Libre Franklin', sans-serif;
+        text-align: justify;
+        padding: 2%;
     }
 }
